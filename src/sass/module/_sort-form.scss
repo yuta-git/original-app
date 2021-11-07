@@ -1,0 +1,36 @@
+.sort-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(10);
+}
+
+.sort-form__left {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  padding: rem(3);
+  border-radius: rem(5);
+}
+
+.sort-form__all {
+  padding: rem(3) rem(10);
+  // background-color: #fff;
+}
+
+.sort-form__favorite {
+  padding: rem(3) rem(10);
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: rem(5);
+}
+
+.sort-form__right {
+  display: flex;
+  align-items: center;
+}
+
+.sort-form__select {
+  margin-left: rem(5);
+}
+

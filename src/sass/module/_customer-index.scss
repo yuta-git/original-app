@@ -1,0 +1,38 @@
+
+.customer-index__inner {
+  padding-right: rem(15);
+  padding-left: rem(15);
+}
+
+.customer-index__items {
+
+}
+
+.customer-index__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+  padding: rem(10);
+  margin-bottom: rem(10);
+}
+
+.customer-index__left {
+  display: flex;
+}
+.customer-index__img {
+  width: rem(80);
+  height: rem(80);
+}
+.customer-index__name {
+  margin-top: rem(10);
+  font-size: rem(20);
+  font-weight: bold;
+}
+
+
+.customer-index__favorite {
+  color: lightblue;
+  font-size: rem(32);
+}

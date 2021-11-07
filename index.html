@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script defer type="text/javascript" src="./assets/js/script.js"></script>
+  <script defer type="text/javascript" src="./assets/js/drawer.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <div class="header__cog js-main-nav">
+      <i class="fas fa-cog"></i>
+    </div>
+    <div class="header__title">
+      顧客一覧(3人)
+    </div>
+    <div class="header__create">
+      <i class="far fa-plus-square"></i>
+    </div>
+  </div>
+</header>
+
+<div class="search-form">
+  <form id="form1" action="自分のサイトURL">
+    <input id="sbox"  name="s" type="text" placeholder="キーワードを入力" />
+    <input id="sbtn" type="submit" value="検索" />
+  </form>
+</div>
+
+<div class="sort-form">
+  <ul class="sort-form__left">
+    <li class="sort-form__all">全て</li>
+    <li class="sort-form__favorite">お気に入り</li>
+  </ul>
+  <ul class="sort-form__right">
+    <i class="fas fa-arrows-alt-v"></i><li class="sort-form__select">５０音</li>
+  </ul>
+</div>
+
+<div class="customer-index">
+  <div class="customer-index__inner">
+    <ul class="customer-index__items">
+      <li class="customer-index__item">
+        <div class="customer-index__left">
+          <figure class="customer-index__img">
+            <img src="assets/images/common/customer-icon.jpg" alt="">
+          </figure>
+          <p class="customer-index__name">伊藤</p>
+        </div><!-- /.customer-index__right -->
+        <div class="customer-index__right">
+          <div class="customer-index__favorite">
+            <i class="fas fa-star"></i>
+          </div>
+        </div><!-- /.customer-index__right -->
+      </li><!-- /.customer-index__item -->
+      <li class="customer-index__item">
+        <div class="customer-index__left">
+          <figure class="customer-index__img">
+            <img src="assets/images/common/customer-icon.jpg" alt="">
+          </figure>
+          <p class="customer-index__name">鈴木</p>
+        </div><!-- /.customer-index__right -->
+        <div class="customer-index__right">
+          <div class="customer-index__favorite">
+            <i class="fas fa-star"></i>
+          </div>
+        </div><!-- /.customer-index__right -->
+      </li><!-- /.customer-index__item -->
+      <li class="customer-index__item">
+        <div class="customer-index__left">
+          <figure class="customer-index__img">
+            <img src="assets/images/common/customer-icon.jpg" alt="">
+          </figure>
+          <p class="customer-index__name">松原</p>
+        </div><!-- /.customer-index__right -->
+        <div class="customer-index__right">
+          <div class="customer-index__favorite">
+            <i class="fas fa-star"></i>
+          </div>
+        </div><!-- /.customer-index__right -->
+      </li><!-- /.customer-index__item -->
+    </ul><!-- /.customer-index__items -->
+
+  </div>
+</div>
+
+<div class="main-nav">
+  <header class="header main-nav__header">
+    <div class="header__inner">
+      <div class="header__cog js-main-nav">
+        <i class="fas fa-cog"></i>
+      </div>
+      <div class="header__title">
+        設定
+      </div>
+      <div class="header__create">
+        <i class="far fa-plus-square"></i>
+      </div>
+    </div>
+  </header>
+  <div class="main-nav__inner">
+    <ul class="main-nav__items">
+      <li class="main-nav__item">
+        <a href="./function.html" class="main-nav__link">
+          <span>顧客プロフィール設定</span>
+        </a>
+      </li>
+      <li class="main-nav__item">
+        <a href="./" class="main-nav__link">
+          <span>ログアウト</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+
+<footer class="footer">
+
+</footer>
+
+</body>
+</html>

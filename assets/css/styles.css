@@ -1,0 +1,464 @@
+@charset "UTF-8";
+.u-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+/* FontFamily */
+body {
+  font-family: "";
+}
+
+/* font-weight */
+/* リキッドレイアウト対応 */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 375) {
+  html {
+    font-size: 4.26667vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 1.45455vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* pcの電話番号発信対応 */
+@media screen and (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+/* ホバー */
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  a:hover {
+    opacity: 0.8;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 48rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* フォームリセット */
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="submit"],
+input[type="button"],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.appp {
+  margin: 1px;
+}
+
+.customer-index__inner {
+  padding-right: 15px;
+  padding-right: 0.9375rem;
+  padding-left: 15px;
+  padding-left: 0.9375rem;
+}
+
+.customer-index__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+  padding: 10px;
+  padding: 0.625rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+
+.customer-index__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.customer-index__img {
+  width: 80px;
+  width: 5rem;
+  height: 80px;
+  height: 5rem;
+}
+
+.customer-index__name {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.customer-index__favorite {
+  color: lightblue;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+.header {
+  background-color: lightblue;
+  color: #fff;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px;
+  padding: 0.9375rem 0.9375rem;
+}
+
+.header__cog {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.header__create {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.header__title {
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.l-inner {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .l-inner {
+    max-width: 1150px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  background-color: #fff;
+}
+
+.main-nav__inner {
+  padding-top: 50px;
+  padding-top: 3.125rem;
+  max-width: 768px;
+  max-width: 48rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-nav__header {
+  max-width: 768px;
+  max-width: 48rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-nav__item:not(:last-of-type) {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.main-nav__item a {
+  color: lightblue;
+  font-size: 24px;
+  font-size: 1.5rem;
+  padding: 15px;
+  padding: 0.9375rem;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid lightblue;
+}
+
+.main-nav.open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: opacity .3s, -webkit-transform .3s;
+  transition: opacity .3s, -webkit-transform .3s;
+  transition: transform .3s, opacity .3s;
+  transition: transform .3s, opacity .3s, -webkit-transform .3s;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+.search-form {
+  padding: 10px;
+  padding: 0.625rem;
+  background-color: #eee;
+}
+
+/*フォーム全体*/
+#form1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*検索ボックス*/
+#sbox {
+  width: 80%;
+  outline: 0;
+  /*クリック時の青い枠線消す*/
+  height: 50px;
+  /*検索ボックスの高さ*/
+  padding: 0 10px;
+  /*テキスト位置調整*/
+  border-radius: 2px 0 0 2px;
+  /*検索ボックスの角を丸める*/
+  background: #ddd;
+  /*検索ボックスの背景カラー*/
+}
+
+/*検索ボタン*/
+#sbtn {
+  width: 20%;
+  /*検索ボタンの横幅*/
+  height: 50px;
+  /*検索ボタンの縦幅*/
+  border-radius: 0 2px 2px 0;
+  /*検索ボタンの角を丸める*/
+  background: #7fbfff;
+  /*検索ボタンの背景カラー*/
+  border: none;
+  /*検索ボタンの枠線を消す*/
+  color: #fff;
+  /*検索ボタンのテキストカラー*/
+  font-weight: bold;
+  /*検索ボタンのテキスト太字*/
+  font-size: 16px;
+  /*検索ボタンのフォントサイズ*/
+}
+
+/*検索ボタンマウスオーバー時*/
+#sbtn:hover {
+  color: #666;
+  /*検索ボタンマウスオーバー時のフォントカラー*/
+}
+
+.sort-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  padding: 0.625rem;
+}
+
+.sort-form__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eee;
+  padding: 3px;
+  padding: 0.1875rem;
+  border-radius: 0.3125rem;
+}
+
+.sort-form__all {
+  padding: 3px 10px;
+  padding: 0.1875rem 0.625rem;
+}
+
+.sort-form__favorite {
+  padding: 3px 10px;
+  padding: 0.1875rem 0.625rem;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+}
+
+.sort-form__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sort-form__select {
+  margin-left: 5px;
+  margin-left: 0.3125rem;
+}
