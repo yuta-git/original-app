@@ -1,0 +1,40 @@
+.basic-profile {
+  width: 100%;
+}
+
+.basic-profile__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.basic-profile__img {
+  width: 20%;
+  height: 100%;
+}
+
+.basic-profile__body {
+  width: 80%;
+  padding: rem(15);
+}
+
+.basic-profile__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(10);
+  border-bottom: 1px solid #eee;
+}
+
+.basic-profile__description {
+  font-size: rem(24);
+  .my-star {
+    color: skyblue;
+  }
+}
+.basic-profile__title {
+  font-size: rem(20);
+}
+
+
+

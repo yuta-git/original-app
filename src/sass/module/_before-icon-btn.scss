@@ -1,0 +1,42 @@
+.before-icon-btn {
+  position: relative;
+  display: inline-block;
+  padding: .3em .4em;
+  border: 1px solid currentColor;
+  color: #fff;
+  background-color: skyblue;
+  text-decoration: none;
+  transition: .25s;
+}
+.before-icon-btn--times {
+  color: #fff;
+  background-color: pink;
+  transition: .25s;
+}
+
+.before-icon-btn:focus,
+.before-icon-btn:hover {
+  background-color: #fff;
+  color: skyblue;
+}
+
+.before-icon-btn--times:focus,
+.before-icon-btn--times:hover {
+  background-color: #fff;
+  color: pink;
+}
+
+.before-icon-btn::before {
+  display: inline-block;
+  margin-right: .5em;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.before-icon-btn--download::before {
+  content: '\f073';
+}
+
+.before-icon-btn--times::before {
+  content: '\f00d';
+}

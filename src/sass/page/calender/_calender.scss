@@ -1,0 +1,74 @@
+.calendar-container {
+  border-radius: 5px;
+  background: #f6f5f4;
+  color: #1a1a1a;
+}
+.calendar {
+  padding: 0 30px 30px 30px;
+  width: 100%;
+  
+  th, td {
+    text-align: center;
+    padding: 10px;
+
+  }
+  th {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  td {
+    font-weight: bold;
+    height: rem(80);
+  }
+  .day *:first-child {
+    // color: #ff838b;
+  }
+  .day *:last-child {
+    // color: #6fb5ff;
+  }
+  td {
+    .calender__customer-name {
+      color: #000;
+    }
+  }
+
+}
+
+.visible-on {
+  color: #000 !important;
+  display: block !important;
+}
+
+.visible-off {
+  visibility: hidden;
+}
+
+.calendar__wrapper {
+  display: inline-block;
+  background-color: lightyellow;
+  width: 100%;
+  position: relative;
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: lightyellow;
+    width: rem(25);
+    height: rem(47);
+    transform: translateX(100%);
+  }
+}
+.calendar__wrapper--2 {
+  display: inline-block;
+  background-color: lightyellow;
+  width: 100%;
+}
+.calendar__block{
+
+}
+
+.calendar__date {
+  display: block;
+}

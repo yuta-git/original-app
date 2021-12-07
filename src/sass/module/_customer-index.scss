@@ -4,8 +4,8 @@
   padding-left: rem(15);
 }
 
-.customer-index__items {
-
+.customer-index{
+  padding-bottom: rem(30);
 }
 
 .customer-index__item {
@@ -20,6 +20,7 @@
 
 .customer-index__left {
   display: flex;
+  width: 80%;
 }
 .customer-index__img {
   width: rem(80);

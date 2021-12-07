@@ -1,0 +1,40 @@
+
+.history-plan-index__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: rem(10);
+}
+
+.history-plan-index__left {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+.history-plan-index__name {
+  font-size: rem(20);
+  font-weight: bold;
+  margin-left: rem(10);
+}
+
+.history-plan-index__favorite {
+  color: lightblue;
+  font-size: rem(32);
+}
+
+.history-plan-index__right {
+  display: flex;
+}
+
+.history-plan-index__date {
+  margin-left: rem(10);
+  font-size: rem(16);
+}
+
+.history-plan-index__place {
+  font-size: rem(18);
+}
+
+
+

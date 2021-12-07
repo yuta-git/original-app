@@ -1,0 +1,39 @@
+.p-function {
+  /* css-wipeではスタイリングなし */
+  // padding-top: rem(20);
+}
+
+.p-function__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: rem(15);
+  padding-left: rem(15);
+  border-bottom: 1px solid #ddd;
+}
+
+.p-function__item.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-function__check {
+  display: block;
+  font-size: rem(24);
+  color: blue;
+  transition-duration: .3s;
+  transition-property: opacity;
+}
+
+.js-p-function__check.opacity-off {
+  opacity: 0;
+}
+
+.p-function__title {
+  text-decoration: none;
+  font-size: rem(24);
+}
+
+.p-function__check:focus,
+.p-function__check:hover {
+  cursor: pointer;
+}

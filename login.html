@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>ログイン画面</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/drawer.js"></script>
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header class="header-login">
+      <div class="header-login__inner">
+        <div class="header-login__text">ログイン</div>
+      </div>
+    </header>
+    <!-- ヘッダー終わり -->
+    
+    <section class="login">
+      <div class="login__inner">
+        <h1 class="login__title">App Title</h1>
+        <form class="login__form form-normal">
+          <div class="form-normal__inner">
+            <div class="form-normal__item">
+              <input type="email" name="email" class="form-normal__input" placeholder="メールアドレス">
+            </div>
+            <div class="form-normal__item">
+              <input type="text" name="password" class="form-normal__input" placeholder="パスワード">
+            </div>
+            <!-- ログインボタン -->
+            <a href="./" class="form-normal__item form-normal__item--submit">
+              <input type="submit"  class="form-normal__input form-normal__input--submit" value="ログイン">
+            </a>
+          </div><!-- /.form-normal__inner -->
+        </form><!-- /.login__form .form-normal -->
+
+        <!-- 新規会員ボタン -->
+        <div class="login__btn">
+          <a href="./new-acount.html" class="c-btn c-btn--lightpink">新規会員登録</a>
+        </div>
+        <!-- 新規会員ボタン終わり -->
+      </div><!-- /.login__inner -->
+    </section><!-- /.login -->
+
+</body>
+
+</html>

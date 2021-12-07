@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>履歴•予定情報入力</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/drawer.js"></script>
+</head>
+
+<body>
+
+  <form class="form">
+
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__cog js-main-nav">
+          <a href="./calender.html"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="header__cog js-main-nav">
+          <span class="header__month">履歴•予定情報入力</span>
+        </div>
+        <div class="header__create">
+          <a href="./calender.html">保存</a>
+        </div>
+      </div>
+    </header>
+    <!-- ヘッダー終わり -->
+
+    <!-- 履歴・予定情報 -->
+    <div class="c-title-lavel">
+      <div class="c-title-lavel__inner">
+        <label for="comment" class="c-title-lavel__title"></label>
+      </div>
+    </div>  
+    
+    <div class="form__item">
+      <label for="your_name" class="form__label">名前</label>
+      <input name="your_name" value="斉藤" id="your_name" type="text" class="form__input" placeholder="タップして入力">
+    </div>
+    
+    <div class="form__item">
+      <label for="your_hobby" class="form__label">同伴者</label>
+      <input name="your_hobby" value="無し" id="your_hobby" type="text" class="form__input" placeholder="タップして入力">
+    </div>
+    <div class="form__item">
+      <label for="your_skill" class="form__label">日時</label>
+      <input name="your_skill" value="11/21 11:00" id="your_skill" type="text" class="form__input" placeholder="タップして入力">
+    </div>
+    <div class="form__item">
+      <label for="your_dayoff" class="form__label">場所</label>
+      <input name="your_dayoff" value="研修" id="your_dayoff" type="text" class="form__input" placeholder="タップして入力">
+    </div>
+
+    <div class="c-title-lavel">
+      <div class="c-title-lavel__inner">
+        <label for="comment" class="c-title-lavel__title">メモ</label>
+      </div>
+    </div>
+    <textarea class="form__textarea" id="comment" name="comment" placeholder="ここには自由にコメントを記入してください">社内研修</textarea>
+
+    <!-- 削除ボタン -->
+    <div class="c-title-lavel">
+      <div class="c-title-lavel__inner text-center">
+        <a class="before-icon-btn before-icon-btn--times before-icon-btn--times" href="./history-plan-show.html">履歴•予定情報を削除する</a>
+      </div>
+    </div>
+    
+    <div class="l-section__bottom">
+    </div>
+    <div class="l-section__footer-padding-bottom">
+    </div>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <nav class="footer__nav">
+          <a href="./index.html" class="footer__nav-item">
+            <figure class="footer__nav-icon">
+              <i class="fas fa-user"></i>
+            </figure>
+            <span class="footer__nav-name">
+              顧客
+            </span>
+          </a>
+          <a href="./calender.html" class="footer__nav-item">
+            <figure class="footer__nav-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </figure>
+            <span class="footer__nav-name footer-active">
+              カレンダー
+            </span>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+  </form>
+</body>
+
+</html>

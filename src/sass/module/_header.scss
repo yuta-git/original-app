@@ -1,24 +1,44 @@
 .header {
   background-color: lightblue;
   color: #fff;
+  padding: rem(15) rem(15);
 }
 
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: rem(15) rem(15);
 }
 
 .header__cog {
   font-size: rem(20);
+  cursor: pointer;
+  height: inherit;
+  padding-right: rem(5);
+  padding-left: rem(5);
+  a {
+    display: inline-block;
+    height: inherit;
+  }
 }
 
 .header__create {
   font-size: rem(20);
+  padding-right: rem(10);
+  padding-left: rem(30);
 }
 
 .header__title {
   font-weight: bold;
   font-size: rem(20);
+}
+
+.header__month {
+  font-weight: bold;
+}
+
+.header__month-link {
+  padding-right: rem(10);
+  padding-left: rem(10);
+  font-weight: bold;
 }

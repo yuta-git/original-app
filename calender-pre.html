@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <!-- meta情報 -->
+  <title>カレンダー</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/drawer.js"></script>
+</head>
+
+<body>
+
+  <form class="form">
+
+    <!-- ヘッダー -->
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__cog js-main-nav">
+          <a href="./history-plan-index.html">履歴•予定</a>
+        </div>
+        <div class="header__cog">
+          <a href="./calender-pre.html" class="header__month-link">＜</a>
+          <span class="header__month">2021年10月</span>
+          <a href="./calender.html" class="header__month-link">＞</a>
+        </div>
+        <a href="./history-plan-create.html" class="header__create">
+          <i class="fas fa-plus white"></i>
+        </a>
+      </div>
+    </header>
+    <!-- ヘッダー終わり -->
+    <!-- <div class="l-section__header-padding-top">
+    </div> -->
+
+    <!-- カレンダー始まり -->
+    <div class="calendar-container">
+      <table class="calendar">
+        <tr>
+          <th>SUN</th>
+          <th>MON</th>
+          <th>TUE</th>
+          <th>WED</th>
+          <th>THU</th>
+          <th>FRI</th>
+          <th>SAT</th>
+        </tr>
+        <tr class="day">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr class="day">
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+        </tr>
+        <tr class="day">
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+        </tr>
+        <tr class="day">
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+        </tr>
+        <tr class="day">
+          <td>
+            25 <div class="visible-off">aaaa</div>
+            <div class="visible-off">aaaa</div>
+          </td>
+          <td>
+            26<div class="visible-off">aaaa</div>
+            <div class="visible-off">aaaa</div>
+          </td>
+          <td>
+            27<div class="visible-off">aaaa</div>
+            <div class="visible-off">aaaa</div>
+          </td>
+          <td>
+            28<div class="visible-off">aaa</div>
+            <div class="visible-off">aaaa</div>
+          </td>
+          <td>
+            29<div class="visible-off">aaa</div>
+            <div class="visible-off">aaaa</div>
+          </td>
+          <td>
+            30<div class="visible-off">aaa</div>
+            <div class="visible-off">aaaa</div>
+          </td>
+          <td>
+            31<div class="visible-off">aaaa</div>
+            <div class="visible-off">aaaa</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- カレンダー終わり -->
+    <!-- フッター余白 -->
+    <div class="l-section__footer-padding-bottom">
+    </div>
+    <!-- フッター始まり -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <nav class="footer__nav">
+          <a href="./index.html" class="footer__nav-item">
+            <figure class="footer__nav-icon">
+              <i class="fas fa-user"></i>
+            </figure>
+            <span class="footer__nav-name">
+              顧客
+            </span>
+          </a>
+          <a href="./calender.html" class="footer__nav-item">
+            <figure class="footer__nav-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </figure>
+            <span class="footer__nav-name footer-active">
+              カレンダー
+            </span>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+  </form>
+
+</body>
+
+</html>

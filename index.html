@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
   <!-- meta情報 -->
-  <title></title>
+  <title>顧客一覧画面</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -23,10 +24,11 @@
   <link rel="stylesheet" href="./assets/css/styles.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script defer type="text/javascript" src="./assets/js/script.js"></script>
-  <script defer type="text/javascript" src="./assets/js/drawer.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/drawer.js"></script>
 </head>
 <body>
+<!-- ヘッダーはじまり -->
 <header class="header">
   <div class="header__inner">
     <div class="header__cog js-main-nav">
@@ -35,18 +37,22 @@
     <div class="header__title">
       顧客一覧(3人)
     </div>
-    <div class="header__create">
+    <a href="./create.html" class="header__create">
       <i class="far fa-plus-square"></i>
-    </div>
+    </a>
   </div>
 </header>
+<!-- ヘッダーの余白 -->
+<!-- <div class="l-section__header-padding-top">
+      
+</div> -->
 
 <div class="search-form">
   <form id="form1" action="自分のサイトURL">
-    <input id="sbox"  name="s" type="text" placeholder="キーワードを入力" />
+    <input id="sbox"  name="s" type="text" placeholder="名前で入力してください" />
     <input id="sbtn" type="submit" value="検索" />
   </form>
-</div>
+</div><!-- /.search-form -->
 
 <div class="sort-form">
   <ul class="sort-form__left">
@@ -54,68 +60,69 @@
     <li class="sort-form__favorite">お気に入り</li>
   </ul>
   <ul class="sort-form__right">
-    <i class="fas fa-arrows-alt-v"></i><li class="sort-form__select">５０音</li>
+    <li class="sort-form__select"><i class="fas fa-arrows-alt-v"></i><span>登録順</span></li>
+    <li class="sort-form__select active-sort-form"><i class="fas fa-arrows-alt-v"></i><span class="active-sort">50音順</span></li>
+
   </ul>
-</div>
+</div><!-- /.sort-form -->
 
 <div class="customer-index">
   <div class="customer-index__inner">
-    <ul class="customer-index__items">
-      <li class="customer-index__item">
-        <div class="customer-index__left">
+    <div class="customer-index__items">
+      <div class="customer-index__item">
+        <a href="./show.html" class="customer-index__left">
           <figure class="customer-index__img">
             <img src="assets/images/common/customer-icon.jpg" alt="">
           </figure>
           <p class="customer-index__name">伊藤</p>
-        </div><!-- /.customer-index__right -->
+        </a><!-- /.customer-index__right -->
         <div class="customer-index__right">
           <div class="customer-index__favorite">
-            <i class="fas fa-star"></i>
+            <i class="fas fa-star js-my-star"></i>
           </div>
         </div><!-- /.customer-index__right -->
-      </li><!-- /.customer-index__item -->
-      <li class="customer-index__item">
-        <div class="customer-index__left">
+      </div><!-- /.customer-index__item -->
+      <div class="customer-index__item">
+        <a href="./show.html" class="customer-index__left">
           <figure class="customer-index__img">
             <img src="assets/images/common/customer-icon.jpg" alt="">
           </figure>
           <p class="customer-index__name">鈴木</p>
-        </div><!-- /.customer-index__right -->
+        </a><!-- /.customer-index__right -->
         <div class="customer-index__right">
           <div class="customer-index__favorite">
-            <i class="fas fa-star"></i>
+            <i class="fas fa-star js-my-star"></i>
           </div>
         </div><!-- /.customer-index__right -->
-      </li><!-- /.customer-index__item -->
-      <li class="customer-index__item">
-        <div class="customer-index__left">
+      </div><!-- /.customer-index__item -->
+      <div class="customer-index__item">
+        <a href="./show.html" class="customer-index__left">
           <figure class="customer-index__img">
             <img src="assets/images/common/customer-icon.jpg" alt="">
           </figure>
           <p class="customer-index__name">松原</p>
-        </div><!-- /.customer-index__right -->
+        </a><!-- /.customer-index__right -->
         <div class="customer-index__right">
           <div class="customer-index__favorite">
-            <i class="fas fa-star"></i>
+            <i class="fas fa-star js-my-star"></i>
           </div>
         </div><!-- /.customer-index__right -->
-      </li><!-- /.customer-index__item -->
-    </ul><!-- /.customer-index__items -->
-
+      </div><!-- /.customer-index__item -->
+    </div><!-- /.customer-index__items -->
   </div>
-</div>
+</div><!-- /.customer-index -->
 
 <div class="main-nav">
   <header class="header main-nav__header">
     <div class="header__inner">
       <div class="header__cog js-main-nav">
-        <i class="fas fa-cog"></i>
+        <i class="fas fa-times"></i>
       </div>
       <div class="header__title">
         設定
       </div>
       <div class="header__create">
-        <i class="far fa-plus-square"></i>
+        <!-- <i class="far fa-plus-square"></i> -->
       </div>
     </div>
   </header>
@@ -127,18 +134,39 @@
         </a>
       </li>
       <li class="main-nav__item">
-        <a href="./" class="main-nav__link">
+        <a href="./login.html" class="main-nav__link">
           <span>ログアウト</span>
         </a>
       </li>
     </ul>
   </div>
+</div><!-- /.main-nav -->
 
+<!-- フッターの余白 -->
+<div class="l-section__header-padding-top">     
 </div>
 
-
 <footer class="footer">
-
+  <div class="footer__inner">
+    <nav class="footer__nav">
+      <a href="./index.html" class="footer__nav-item">
+        <figure class="footer__nav-icon">
+          <i class="fas fa-user"></i>
+        </figure>
+        <span class="footer__nav-name footer-active">
+          顧客
+        </span>
+      </a>
+      <a href="./calender.html" class="footer__nav-item">
+        <figure class="footer__nav-icon">
+          <i class="fas fa-calendar-alt"></i>
+        </figure>
+        <span class="footer__nav-name">
+          カレンダー
+        </span>
+      </a>
+    </nav>
+  </div>
 </footer>
 
 </body>

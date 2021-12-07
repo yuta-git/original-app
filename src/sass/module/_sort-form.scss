@@ -28,9 +28,28 @@
 .sort-form__right {
   display: flex;
   align-items: center;
+  background-color: #eee;
+  padding: rem(3);
+  border-radius: rem(5);
 }
 
 .sort-form__select {
-  margin-left: rem(5);
+  span {
+    margin-left: rem(5);
+  }
+  .active-sort {
+    font-weight: bold;
+  }
+}
+
+.sort-form__select:first-of-type {
+  margin-right: rem(10);
+}
+
+.active-sort-form { 
+  padding: rem(3) rem(10);
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: rem(5);
 }
 

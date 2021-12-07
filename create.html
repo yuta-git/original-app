@@ -7,7 +7,7 @@
   <meta name="format-detection" content="telephone=no" />
   <meta name="robots" content="noindex" />
   <!-- meta情報 -->
-  <title>顧客詳細画面</title>
+  <title>顧客新規作成画面</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <!-- ogp -->
@@ -45,10 +45,10 @@
       </div>
     </header>
     <!-- ヘッダー終わり -->
+
     <div class="c-title-lavel">
       <div class="c-title-lavel__inner flex-box">
         <span class="c-title-lavel__title">基本プロフィール</span>
-        <a class="before-icon-btn before-icon-btn--download" href="./history-plan-create.html">履歴•予定登録</a>
       </div>
     </div>
 
@@ -60,11 +60,12 @@
         <div class="basic-profile__body">
           <div class="form__item">
             <label for="your_name" class="form__label">名前</label>
-            <input name="your_name" value="伊藤" id="your_name" type="text" class="form__input" placeholder="タップして入力">
+            <input name="your_name" value="" id="your_name" type="text" class="form__input" placeholder="タップして入力">
           </div>
+          <!-- お気に入り -->
           <div class="basic-profile__content">
             <p class="basic-profile__title">お気に入り</p>
-            <p class="basic-profile__description"><i class="fas fa-star my-star js-my-star"></i></p>
+            <p class="basic-profile__description"><i class="far fa-star my-star js-my-star"></i></p>
           </div>
         </div><!-- /.basic-profile__body -->
       </div>
@@ -75,7 +76,7 @@
         <label for="comment" class="c-title-lavel__title">メモ</label>
       </div>
     </div>
-    <textarea class="form__textarea" id="comment" name="comment" placeholder="ここには自由にコメントを記入してください">刑事ドラマの話で盛り上がった</textarea>
+    <textarea class="form__textarea" id="comment" name="comment" placeholder="ここには自由にコメントを記入してください"></textarea>
 
     <div class="c-title-lavel">
       <div class="c-title-lavel__inner">
@@ -84,26 +85,27 @@
       </div>
     </div>
 
+    <!-- 基本プロフィール -->
     <div class="form__item">
       <label for="your_age" class="form__label">年齢</label>
-      <input name="your_age" value="34歳" id="your_age" type="text" class="form__input" placeholder="タップして入力">
+      <input name="your_age" value="" id="your_age" type="text" class="form__input" placeholder="タップして入力">
     </div>
 
     <div class="form__item">
       <label for="your_birthday" class="form__label">誕生日</label>
-      <input name="your_birthday" value="3月4日" id="your_birthday" type="text" class="form__input" placeholder="タップして入力">
+      <input name="your_birthday" value="" id="your_birthday" type="text" class="form__input" placeholder="タップして入力">
     </div>
     <div class="form__item">
       <label for="your_address" class="form__label">現在の住居地</label>
-      <input name="your_address" value="愛知県" id="your_address" type="text" class="form__input" placeholder="タップして入力">
+      <input name="your_address" value="" id="your_address" type="text" class="form__input" placeholder="タップして入力">
     </div>
     <div class="form__item">
       <label for="your_hometown" class="form__label">出身地</label>
-      <input name="your_hometown" value="三重県" id="your_hometown" type="text" class="form__input" placeholder="タップして入力">
+      <input name="your_hometown" value="" id="your_hometown" type="text" class="form__input" placeholder="タップして入力">
     </div>
     <div class="form__item">
       <label for="your_feature" class="form__label">特徴</label>
-      <input name="your_feature" value="黒縁メガネかけてる" id="your_feature" type="text" class="form__input" placeholder="タップして入力">
+      <input name="your_feature" value="" id="your_feature" type="text" class="form__input" placeholder="タップして入力">
     </div>
     <div class="form__item">
       <label for="your_blood_type" class="form__label">血液型</label>
@@ -111,7 +113,7 @@
     </div>
     <div class="form__item">
       <label for="your_job" class="form__label">職業</label>
-      <input name="your_job" value="会社員" id="your_job" type="text" class="form__input" placeholder="タップして入力">
+      <input name="your_job" value="" id="your_job" type="text" class="form__input" placeholder="タップして入力">
     </div>
 
     <!-- 趣味・嗜好 -->
@@ -151,15 +153,15 @@
     
     <div class="form__item">
       <label for="your_marriage" class="form__label">結婚</label>
-      <input name="your_marriage" value="してない" id="your_marriage" type="text" class="form__input" placeholder="タップして入力">
+      <input name="your_marriage" value="" id="your_marriage" type="text" class="form__input" placeholder="タップして入力">
     </div>
     <div class="form__item">
       <label for="your_children" class="form__label">子供</label>
-      <input name="your_children" value="いない" id="your_children" type="text" class="form__input" placeholder="タップして入力">
+      <input name="your_children" value="" id="your_children" type="text" class="form__input" placeholder="タップして入力">
     </div>
     <div class="form__item">
       <label for="your_lover" class="form__label">恋人</label>
-      <input name="your_lover" value="いる" id="your_lover" type="text" class="form__input" placeholder="タップして入力">
+      <input name="your_lover" value="" id="your_lover" type="text" class="form__input" placeholder="タップして入力">
     </div>
     
     <!-- 連絡先　-->
@@ -181,60 +183,10 @@
       <label for="your_company" class="form__label">会社名</label>
       <input name="your_company" value="" id="your_company" type="text" class="form__input" placeholder="タップして入力">
     </div>    
-
-    <!-- 履歴・予定情報 -->
-    <div class="c-title-lavel">
-      <div class="c-title-lavel__inner">
-        <label for="comment" class="c-title-lavel__title">履歴•予定情報</label>
-      </div>
-    </div>
-
-    <div class="history-plan">
-      <div class="history-plan__inner">
-        <div class="history-plan__items">
-          <a href="./show.html" class="history-plan__item">
-            <div class="history-plan__left">
-              <p class="history-plan__title">日時：</p>
-              <p class="history-plan__date">
-                10月29日
-                <span>16時</span>
-              </p>
-            </div><!-- /.history-plan__right -->
-            <div class="history-plan__right">
-              <p class="history-plan__title">場所：</p>
-              <div class="history-plan__place">
-                喫茶店
-              </div>
-            </div><!-- /.history-plan__right -->
-          </a><!-- /.history-plan__item -->
-          <a href="./show.html" class="history-plan__item">
-            <div class="history-plan__left">
-              <p class="history-plan__title">日時：</p>
-              <p class="history-plan__date">
-                11月29日
-                <span>16時</span>
-              </p>
-            </div><!-- /.history-plan__right -->
-            <div class="history-plan__right">
-              <p class="history-plan__title">場所：</p>
-              <div class="history-plan__place">
-                会社
-              </div>
-            </div><!-- /.history-plan__right -->
-          </a><!-- /.history-plan__item -->
-        </div><!-- /.history-plan__items -->
-      </div>
-    </div><!-- /.history-plan -->
-
-    <!-- 削除ボタン -->
-    <div class="c-title-lavel color-white">
-      <div class="c-title-lavel__inner text-center">
-        <a class="before-icon-btn before-icon-btn--times before-icon-btn--times" href="#">顧客情報を削除する</a>
-      </div>
-    </div>
-
+    
+    <div class="l-section__bottom"></div>
     <div class="l-section__footer-padding-bottom"></div>
-    <!-- フッター始まり -->
+
     <footer class="footer">
       <div class="footer__inner">
         <nav class="footer__nav">
@@ -259,7 +211,6 @@
     </footer>
 
   </form>
-
 </body>
 
 </html>

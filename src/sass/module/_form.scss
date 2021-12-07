@@ -1,0 +1,38 @@
+.form__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: rem(15);
+  padding-right: rem(15);
+  border-bottom: 1px solid #eee;
+}
+.form__label {
+  font-size: rem(20);
+}
+
+.form__input {
+  padding-left: rem(10);
+  padding-right: rem(10);
+  height: 50px;
+  font-size: rem(24);
+  text-align: right;
+}
+
+.form__textarea {
+  width: 100%;
+  resize: none;
+  min-height: rem(100);
+  font-size: rem(24);
+}
+
+.form__select {
+  font-size: rem(24);
+  padding-top: rem(5);
+  padding-bottom: rem(5);
+  text-align: right;
+}
+
+.form__option {
+  font-size: rem(24);
+}
